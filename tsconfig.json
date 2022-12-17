@@ -13,5 +13,6 @@
   },
   "include": ["src/**/*"],
   "exclude": ["dist", "node_modules"],
-  "compileOnSave": false
+  "compileOnSave": false,
+  "baseUrl": "src"
 }
