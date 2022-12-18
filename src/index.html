@@ -78,8 +78,14 @@
 
       socket.on("chat message", (msg) => {
         var item = document.createElement("li");
-        item.textContent = msg;
         messages.appendChild(item);
+        item_div = item.createChild("div");
+        item_div.textContent = msg;
+        item.appendChild(item_div);
+        item_div_img = document.createElement("img");
+        item_div_img.src = "./assets/images/a.jpg";
+        item_div_img.alt = "avatar";
+        item_div.appendChild(item_div_img);
         window.scrollTo(0, document.body.scrollHeight);
       });
     </script>
